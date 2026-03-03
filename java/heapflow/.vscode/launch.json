@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run GCPromotionDemo",
+      "request": "launch",
+      "mainClass": "io.github.lvoxx.heapflow.GCPromotionDemo",
+      "projectName": "heapflow",
+      "vmArgs": "-Xms64m -Xmx64m -XX:+UseSerialGC -Xlog:gc* -Xlog:gc+age=trace"
+    }
+  ]
+}
