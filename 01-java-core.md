@@ -81,12 +81,11 @@ Collection
 └── Queue
     ├── ArrayDeque       faster than Stack/LinkedList
     └── PriorityQueue    min-heap
-
-Map
-├── HashMap              O(1) avg, null key OK, không thread-safe
-├── LinkedHashMap        giữ insertion order
-├── TreeMap              sorted by key, O(log n)
-└── ConcurrentHashMap    thread-safe, dùng thay Hashtable
+└── Map
+    ├── HashMap              O(1) avg, null key OK, không thread-safe
+    ├── LinkedHashMap        giữ insertion order
+    ├── TreeMap              sorted by key, O(log n)
+    └── ConcurrentHashMap    thread-safe, dùng thay Hashtable
 ```
 
 ### HashMap Internal (hay hỏi!)
