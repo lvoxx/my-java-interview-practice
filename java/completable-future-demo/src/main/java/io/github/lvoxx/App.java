@@ -72,7 +72,8 @@ public class App {
 
         CompletableFuture<Void> future = CompletableFuture.supplyAsync(() -> fetchUser(id))
                 .thenApply(user -> enrichUser(user))
-                .thenComposeAsync(user -> fetchOrder(user.getId()))
+                .thenComposeAsync(user -> fetchOrder(user.getId())) // Summit new task to the common pool by
+                                                                    // ForkJoinPool.commonPool()
                 .thenAccept(orders -> process(orders))
                 .exceptionally(ex -> {
                     log(ex);
