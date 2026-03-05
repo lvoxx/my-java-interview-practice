@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Nplus1QueryApplication<nplus1-query>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "io.github.lvoxx.nplus1_query.Nplus1QueryApplication",
+            "projectName": "nplus1-query",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
